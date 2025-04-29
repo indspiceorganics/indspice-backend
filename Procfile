@@ -1,0 +1,1 @@
+web: gunicorn indspice_backend.wsgi:application --log-file -

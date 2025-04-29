@@ -1,12 +1,11 @@
+# requirements.txt (Example versions - yours might differ slightly)
 asgiref==3.8.1
-Brotli==1.1.0
-dj-database-url==2.3.0
-Django==5.2
-django-cors-headers==4.7.0
-gunicorn==23.0.0
-packaging==25.0
-psycopg2-binary==2.9.10
-sqlparse==0.5.3
-typing_extensions==4.13.2
-tzdata==2025.2
-whitenoise==6.9.0
+Django==5.0.4 # Or your Django version
+django-cors-headers==4.3.1
+gunicorn==22.0.0
+dj-database-url==2.1.0
+psycopg2-binary==2.9.9 # For PostgreSQL
+whitenoise==6.6.0
+sqlparse==0.5.0
+typing_extensions==4.11.0
+# Add any other dependencies your project uses
