@@ -1,1 +1,1 @@
-web: gunicorn indspice_backend.wsgi:application --log-file -
+web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app --log-file -
