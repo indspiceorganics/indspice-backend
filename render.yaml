@@ -2,7 +2,7 @@ services:
   - type: web
     name: indspice-contact-backend
     env: python
-    startCommand: gunicorn -w 4 -b 0.0.0.0:10000 backend.main:app
+    startCommand: gunicorn -w 4 -b 0.0.0.0:10000 backend1.main:app
     buildCommand: ""
     envVars:
       - key: GMAIL_USER
