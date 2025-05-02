@@ -14,13 +14,11 @@ ENV/
 .venv/
 
 # --- Environment Variables ---
-# Ignore all .env files except the example template
 .env
 .env.*
 !.env.example
 
 # --- Distribution / Packaging ---
-# Less critical for pure API, but safe to keep
 build/
 dist/
 *.egg-info/
@@ -33,22 +31,6 @@ pip-wheel-metadata/
 pip-log.txt
 pip-delete-this-directory.txt
 
-# --- Unit Test / Coverage Reports (Add if you use these tools) ---
-# htmlcov/
-# .tox/
-# .coverage
-# .coverage.*
-# .cache
-# nosetests.xml
-# coverage.xml
-# *.cover
-# *.py,cover
-# .hypothesis/
-# .pytest_cache/
-
-# --- Jupyter Notebook ---
-# .ipynb_checkpoints
-
 # --- IDE / Editor Files ---
 .idea/
 .vscode/
@@ -60,8 +42,3 @@ pip-delete-this-directory.txt
 .DS_Store
 Thumbs.db
 desktop.ini
-
-# --- Other ---
-# If using PyInstaller (unlikely for this API)
-# *.spec
-# *.manifest
