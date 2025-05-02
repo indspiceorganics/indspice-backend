@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: indspice-contact-backend
+    env: python
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port 10000
+    buildCommand: ""
+    envVars:
+      - key: GMAIL_USER
+        value: indspiceorganics@gmail.com
+      - key: GMAIL_APP_PASSWORD
+        value: tjdhcwlnrpblepxy
+      - key: ADMIN_EMAIL
+        value: indspiceorganics@gmail.com
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://www.indspiceorganics.com,https://indspiceorganics.com
+      - key: DEBUG
+        value: false
